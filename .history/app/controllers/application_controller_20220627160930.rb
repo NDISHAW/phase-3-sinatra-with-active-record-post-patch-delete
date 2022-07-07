@@ -39,7 +39,6 @@ class ApplicationController < Sinatra::Base
       score: params[:score],
       comment: params[:comment]
     )
-    review.to_json
   end
 
 end

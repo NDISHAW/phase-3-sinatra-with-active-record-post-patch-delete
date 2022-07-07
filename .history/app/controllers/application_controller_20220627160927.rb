@@ -37,9 +37,8 @@ class ApplicationController < Sinatra::Base
     review = Review.find(params[:id])
     review.update(
       score: params[:score],
-      comment: params[:comment]
+    comment: params[:comment]
     )
-    review.to_json
   end
 
 end
